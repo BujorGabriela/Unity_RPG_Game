@@ -119,3 +119,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Town
   transitionAreaName: 
+  theAreaEnter: {fileID: 802959544}

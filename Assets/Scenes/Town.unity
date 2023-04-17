@@ -3109,6 +3109,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037228799 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 802959544, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+  m_PrefabInstance: {fileID: 4872395033049790612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9341adf23253a046998e22fea98c92e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2085499155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,6 +3228,10 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Mountains
       objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342689, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: theAreaEnter
+      value: 
+      objectReference: {fileID: 2037228799}
     - target: {fileID: 4872395033291342689, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: transitionName
       value: Mountains - 1
