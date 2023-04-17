@@ -3208,5 +3208,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Area Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342695, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6066818
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342695, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.19665909
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
