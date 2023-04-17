@@ -3161,6 +3161,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 802959543, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 802959543, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3206,8 +3214,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342689, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: sceneToLoad
+      value: Mountains
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342689, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: transitionName
       value: Mountains - 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342689, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: transitionAreaName
+      value: Mountains-1
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342694, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_Name

@@ -2973,28 +2973,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342689, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
-      propertyPath: sceneToLoad
-      value: Town
+      propertyPath: transitionAreaName
+      value: Mountains-1
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342694, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_Name
       value: Area Exit
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872395033291342695, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
-      propertyPath: m_Size.x
-      value: 0.624815
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872395033291342695, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
-      propertyPath: m_Size.y
-      value: 2.435123
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872395033291342695, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.85895157
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872395033291342695, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.47933674
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
