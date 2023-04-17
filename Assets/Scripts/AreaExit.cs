@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Media;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class AreaExit : MonoBehaviour
 {
     [SerializeField] string sceneToLoad;
+    [SerializeField] string transitionAreaName;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class AreaExit : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            Player.instance.transitionName = transitionAreaName; 
             SceneManager.LoadScene(sceneToLoad);
         }
     }

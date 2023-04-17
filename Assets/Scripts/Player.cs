@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] Rigidbody2D playerRigidBody;
     [SerializeField] Animator playerAnimator;
 
+    public string transitionName;
+
     // Start is called before the first frame update
     void Start()
     {
