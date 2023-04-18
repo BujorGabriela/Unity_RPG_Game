@@ -26,7 +26,10 @@ public class AreaExit : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            Player.instance.transitionName = transitionAreaName; 
+            Player.instance.transitionName = transitionAreaName;
+
+            MenuManager.instance.FadeImage();
+
             SceneManager.LoadScene(sceneToLoad);
         }
     }
