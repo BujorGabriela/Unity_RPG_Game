@@ -30,7 +30,14 @@ public class AreaExit : MonoBehaviour
 
             MenuManager.instance.FadeImage();
 
-            SceneManager.LoadScene(sceneToLoad);
+            StartCoroutine(LoadSceneCoroutine());
         }
+    }
+
+    IEnumerator LoadSceneCoroutine()
+    {
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
