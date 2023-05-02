@@ -278,12 +278,20 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.13
+      value: 15.129999
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.56
+      value: -1.5599995
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -295,15 +303,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4872395033291342688, guid: 1cccf38637dc18446a794fca736f77f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -464,8 +472,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1070266012}
   - component: {fileID: 1070266011}
+  - component: {fileID: 1070266014}
+  - component: {fileID: 1070266013}
+  - component: {fileID: 1070266015}
   m_Layer: 0
-  m_Name: healer
+  m_Name: Healer NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -538,6 +549,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1070266013
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070266010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08484727, y: -0.22774744}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.36}
+    newSize: {x: 0.32, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2131273, y: 0.81549466}
+  m_EdgeRadius: 0
+--- !u!61 &1070266014
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070266010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000052154064, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.36}
+    newSize: {x: 0.32, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28120345, y: 0.36}
+  m_EdgeRadius: 0
+--- !u!114 &1070266015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070266010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef1b000d3f5d354bbf06c4a323bd7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1289445806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1843445904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1616,6 +1691,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 438029656}
+  - {fileID: 1872100126}
   m_Father: {fileID: 969987803412154177}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1693,12 +1769,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1792262309}
-  m_Father: {fileID: 969987803412154177}
-  m_RootOrder: 2
+  m_Father: {fileID: 1843445904}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 304, y: -761}
+  m_AnchoredPosition: {x: 183.44751, y: 45.738007}
   m_SizeDelta: {x: 282.161, y: 109.896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872100127
@@ -5110,6 +5186,34 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 969987804107301650, guid: 957f213c55b3b4a4ab30a011361b7069, type: 3}
   m_PrefabInstance: {fileID: 969987803412154176}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &969987803412154178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 969987804107301646, guid: 957f213c55b3b4a4ab30a011361b7069, type: 3}
+  m_PrefabInstance: {fileID: 969987803412154176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &969987803412154179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969987803412154178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57388c00aef1d6b4088f2b0eef619be2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogText: {fileID: 438029657}
+  nameText: {fileID: 1792262310}
+  dialogBox: {fileID: 1843445903}
+  nameBox: {fileID: 1872100125}
+  dialogSentences:
+  - Hello.
+  - I am Diblo.
+  - I come from the underworld.
+  - I am a simple traveler now.
+  - The underworld was just... too much for me.
+  currentSentence: 0
 --- !u!1001 &6674275945875916374
 PrefabInstance:
   m_ObjectHideFlags: 0
