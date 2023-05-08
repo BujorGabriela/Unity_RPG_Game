@@ -613,6 +613,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef1b000d3f5d354bbf06c4a323bd7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sentences:
+  - '#Healer'
+  - ex1
+  - '#Demon'
+  - ex2
+  - '#Healer'
+  - ex3
 --- !u!1 &1289445806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,17 +5210,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57388c00aef1d6b4088f2b0eef619be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &969987803412154184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969987803412154178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41775463d59d6324aaa22c50cc31b1de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   dialogText: {fileID: 438029657}
-  nameText: {fileID: 1792262310}
+  nameText: {fileID: 438029657}
   dialogBox: {fileID: 1843445903}
   nameBox: {fileID: 1872100125}
   dialogSentences:
-  - Hello.
-  - I am Diblo.
-  - I come from the underworld.
-  - I am a simple traveler now.
-  - The underworld was just... too much for me.
-  currentSentence: 0
+  - gerger
+  - fgdfg
+  - gdfgfdg
+  - gfdgdfg
+  - gdfgdfgdf
+  currentSentence: 3
 --- !u!1001 &6674275945875916374
 PrefabInstance:
   m_ObjectHideFlags: 0
