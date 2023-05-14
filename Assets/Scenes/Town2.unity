@@ -406,11 +406,11 @@ PrefabInstance:
       objectReference: {fileID: 1960019199}
     - target: {fileID: 7707219802568005420, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.809992
+      value: 4.809991
       objectReference: {fileID: 0}
     - target: {fileID: 7707219802568005420, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.013762226
+      value: 0.0137617495
       objectReference: {fileID: 0}
     - target: {fileID: 7707219802582122504, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
       propertyPath: m_RootOrder
@@ -5087,6 +5087,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad164b1319848d444a59d6e92b5ef55e, type: 3}
+--- !u!1 &2112475782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2930053412396321285, guid: ad164b1319848d444a59d6e92b5ef55e, type: 3}
+  m_PrefabInstance: {fileID: 2098846491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2112475789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112475782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2099c2c158e005498751e641f99f68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Diblo
+  playerLevel: 1
+  currentXP: 36
+  maxHP: 100
+  currentHP: 100
+  maxMana: 30
+  currentMana: 0
+  dexterity: 10
+  defence: 30
 --- !u!1001 &969987803412154176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5207,7 +5233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 969987803412154178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57388c00aef1d6b4088f2b0eef619be2, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &969987803412154184
