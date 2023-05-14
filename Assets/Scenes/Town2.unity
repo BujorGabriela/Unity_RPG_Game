@@ -5105,12 +5105,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Diblo
-  playerLevel: 1
+  maxLevel: 50
+  playerLevel: 2
   currentXP: 36
+  xpForNextLevel: 
+  baseLevelXP: 100
   maxHP: 100
   currentHP: 100
   maxMana: 30
-  currentMana: 0
+  currentMana: 30
   dexterity: 10
   defence: 30
 --- !u!1001 &969987803412154176
