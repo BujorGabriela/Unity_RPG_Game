@@ -19,16 +19,62 @@ public class Inventory : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddItems(ItemsManager item)
     {
+        if(item.isStackable)
+        {
+            bool itemAlreadyInInventory = false;
+
+            foreach(ItemsManager itemInInventory in itemsList)
+            {
+                if(itemInInventory.itemName == item.itemName)
+                {
+                    itemInInventory.amount += item.amount;
+                    itemAlreadyInInventory = true;
+                }
+            }
+
+            if(!itemAlreadyInInventory)
+            {
+                itemsList.Add(item);
+            }
+        }
+        else
+        {
+            itemsList.Add(item);
+        }
         
     }
 
-    public void AddItems(ItemsManager item)
+    public void RemoveItem(ItemsManager item)
     {
-        print(item.itemName + "has been added to the inventory");
-        itemsList.Add(item);
-        print(itemsList.Count);
+        if(item.isStackable)
+        {
+            ItemsManager inventoryItem = null;
+
+            foreach(ItemsManager itemInInventory in itemsList )
+            {
+                if(itemInInventory.itemName == item.itemName)
+                {
+                    itemInInventory.amount--;
+                    inventoryItem = itemInInventory;
+                }
+            }
+
+            if(inventoryItem != null && inventoryItem.amount <= 0)
+            {
+                itemsList.Remove(inventoryItem);
+            }
+        }
+
+        else
+        {
+            itemsList.Remove(item);
+        }
+    }
+
+    public List<ItemsManager> GetItemsList()
+    {
+        return itemsList;
     }
 }

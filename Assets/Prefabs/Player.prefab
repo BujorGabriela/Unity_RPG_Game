@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2930053412396321287}
   - component: {fileID: 2930053412396321284}
   - component: {fileID: 2930053412396321339}
+  - component: {fileID: 2112475789}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -141,6 +142,7 @@ MonoBehaviour:
   playerRigidBody: {fileID: 2930053412396321286}
   playerAnimator: {fileID: 2930053412396321339}
   transitionName: 
+  deactivateMovement: 0
 --- !u!95 &2930053412396321339
 Animator:
   serializedVersion: 5
@@ -162,3 +164,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2112475789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2930053412396321285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2099c2c158e005498751e641f99f68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Devil
+  characterImage: {fileID: -2117303824, guid: ebfa2fd258b234649a389ee3da865963, type: 3}
+  maxLevel: 50
+  playerLevel: 1
+  currentXP: 36
+  xpForNextLevel: 
+  baseLevelXP: 100
+  maxHP: 100
+  currentHP: 20
+  maxMana: 30
+  currentMana: 0
+  dexterity: 10
+  defence: 30
+  equippedWeaponName: 
+  equippedArmorName: 
+  weaponPower: 0
+  armorDefence: 0
+  equipedWeapon: {fileID: 0}
+  equipedArmor: {fileID: 0}

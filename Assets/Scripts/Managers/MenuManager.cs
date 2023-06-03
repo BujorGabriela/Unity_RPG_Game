@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Diagnostics;
 
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] Image imageToFade;
-    [SerializeField] GameObject menu;
+    public GameObject menu;
 
     [SerializeField] GameObject[] statsButtons;
 
@@ -19,8 +20,19 @@ public class MenuManager : MonoBehaviour
     [SerializeField] SpriteRenderer[] characterImage;
     [SerializeField] GameObject[] characterPanel;
 
-    [SerializeField] TextMeshProUGUI statName, statHP, statMana, statDex, statDef;
+    [SerializeField] TextMeshProUGUI statName, statHP, statMana, statDex, statDef, statEquipedWeapon, statEquipedArmor;
+    [SerializeField] TextMeshProUGUI statWeaponPower, statArmorDefence;
     [SerializeField] Image characterSatImage;
+
+    [SerializeField] GameObject itemSlotContainer;
+    [SerializeField] Transform itemSlotContainerParent;
+
+    public TextMeshProUGUI itemName, itemDescription;
+
+    public ItemsManager activeItem;
+
+    [SerializeField] GameObject characterChoicePanel;
+    [SerializeField] TextMeshProUGUI[] itemsCharacterChoiceNames;
 
     private void Start()
     {
@@ -86,12 +98,86 @@ public class MenuManager : MonoBehaviour
         statDef.text = playerSelected.defence.ToString();
         characterSatImage.sprite = playerSelected.characterImage;
 
+        statEquipedWeapon.text = playerSelected.equippedWeaponName;
+        statEquipedArmor.text = playerSelected.equippedArmorName;
+
+        statWeaponPower.text = playerSelected.weaponPower.ToString();
+        statArmorDefence.text = playerSelected.armorDefence.ToString();
+
+    }
+
+    public void UpdateItemsInventory()
+    {
+        //foreach (Transform itemSlot in itemSlotContainerParent)
+        //{
+            //Destroy(itemSlot.gameObject);
+        //}
+
+
+        foreach (ItemsManager item in Inventory.instance.GetItemsList())
+        {
+            RectTransform itemSlot = Instantiate(itemSlotContainer, itemSlotContainerParent).GetComponent<RectTransform>();
+
+            Image itemImage = itemSlot.Find("Items Image").GetComponent<Image>();
+            itemImage.sprite = item.itemsImage;
+
+            TextMeshProUGUI itemsAmountText = itemSlot.Find("Amount Text").GetComponent<TextMeshProUGUI>();
+
+            if (item.amount > 1)
+                itemsAmountText.text = item.amount.ToString();
+            else
+                itemsAmountText.text = "";
+
+            itemSlot.GetComponent<ItemButton>().itemOnButton = item;
+        }
+    }
+
+    public void DiscardItem()
+    {
+        if (activeItem != null)
+        {
+            Inventory.instance.RemoveItem(activeItem);
+            UpdateItemsInventory();
+        }
+    }
+
+    public void UseItem(int selectedCharacter)
+    {
+        if (activeItem != null)
+        {
+            activeItem.UseItem(selectedCharacter);
+        }
+        OpenCharacterChoicePanel();
+        DiscardItem();
+    }
+
+    public void OpenCharacterChoicePanel()
+    {
+        characterChoicePanel.SetActive(true);
+
+        if(activeItem)
+        {
+            for(int i = 0; i < playerStats.Length; i++)
+                {
+                    PlayerStats activePlayer = GameManager.instance.GetPlayerStats()[i];
+                    itemsCharacterChoiceNames[i].text = activePlayer.playerName;
+
+                    bool activePlayerAvailable = activePlayer.gameObject.activeInHierarchy;
+                    itemsCharacterChoiceNames[i].transform.parent.gameObject.SetActive(activePlayerAvailable);
+            }
+        }
+  
+    }
+
+    public void CloseCharacterChoicePanel()
+    {
+        characterChoicePanel.SetActive(false);
     }
 
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("We've quit the game");
+        UnityEngine.Debug.Log("We've quit the game");
     }
 
     public void FadeImage()
