@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Town.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mountains.unity
     guid: d115925cbf40ccb42b13676d0701446f
   - enabled: 1
@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mountains2.unity
     guid: d3e291c824ca5cd4f8acf3562f0be2f5
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 37906b0ced61f3f4896cea2889b4e7f5
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 5b85223d565e8354eba04de1332a009e
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 9c56c4df593524a43a9cf3fcf9fd52e0
   m_configObjects: {}

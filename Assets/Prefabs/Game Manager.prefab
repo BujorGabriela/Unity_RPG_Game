@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8261078855082597333}
   - component: {fileID: 8261078855082597332}
   - component: {fileID: 8261078855082597330}
+  - component: {fileID: 8763472768243062891}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -48,6 +49,8 @@ MonoBehaviour:
   playerStats: []
   gameMenuOpened: 0
   dialogBoxOpened: 0
+  shopOpened: 0
+  currentBitcoins: 0
 --- !u!114 &8261078855082597330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,3 +63,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf29cde548f6d3341bdf74c41580e206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8763472768243062891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261078855082597335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48829b942f8e2d4fa80356f83a2ec89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemsAvailable:
+  - {fileID: 2797119114445093605, guid: 218d5512750e4db419b98bcc56799a27, type: 3}
+  - {fileID: 4813085108774508119, guid: 89130bf0aec2fc04585b91bef58605ab, type: 3}
+  - {fileID: 2943529765180674935, guid: 8eeae3b9628d0ff4d933379ca77da516, type: 3}
+  - {fileID: 1043139433172036830, guid: 7ecda3cef0a30f04fa2e21167077de08, type: 3}
+  - {fileID: 597814541132721823, guid: ac3e730638c728246889c3fbfa2f04a6, type: 3}
+  - {fileID: 8177006849500938560, guid: 8b252e30a3e8f7c40aa9c1c99e469ba8, type: 3}

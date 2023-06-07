@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
 
     public static Inventory instance;
 
-    private List<ItemsManager> itemsList;
+    public List<ItemsManager> itemsList;
 
     // Start is called before the first frame update
     void Start()

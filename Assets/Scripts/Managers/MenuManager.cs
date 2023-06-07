@@ -138,6 +138,7 @@ public class MenuManager : MonoBehaviour
         {
             Inventory.instance.RemoveItem(activeItem);
             UpdateItemsInventory();
+            AudioManager.instance.PlaySFX(3);
         }
     }
 
@@ -148,7 +149,11 @@ public class MenuManager : MonoBehaviour
             activeItem.UseItem(selectedCharacter);
         }
         OpenCharacterChoicePanel();
-        DiscardItem();
+
+        Inventory.instance.RemoveItem(activeItem);
+        UpdateItemsInventory();
+
+        AudioManager.instance.PlaySFX(8);
     }
 
     public void OpenCharacterChoicePanel()
@@ -172,6 +177,11 @@ public class MenuManager : MonoBehaviour
     public void CloseCharacterChoicePanel()
     {
         characterChoicePanel.SetActive(false);
+    }
+
+    public void CloseMenu()
+    {
+        menu.SetActive(false);
     }
 
     public void QuitGame()
