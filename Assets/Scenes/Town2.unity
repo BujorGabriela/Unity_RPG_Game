@@ -905,11 +905,19 @@ PrefabInstance:
       objectReference: {fileID: 1960019199}
     - target: {fileID: 7707219802568005420, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 4.809991
       objectReference: {fileID: 0}
     - target: {fileID: 7707219802568005420, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.013872853
+=======
+      value: 4.809993
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707219802568005420, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.013916245
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7707219802582122504, guid: 191e1c2c2aa1b9843b42e35c22040b57, type: 3}
       propertyPath: m_RootOrder
@@ -1125,11 +1133,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - '#Healer'
+  - '#Diblo'
   - ex1
+<<<<<<< Updated upstream
   - '#Diablo'
   - Hey
   - '#Healer'
+=======
+  - '#Prust'
+  - ex2
+  - '#Diblo'
+>>>>>>> Stashed changes
   - ex3
   shouldActivateQuest: 1
   questToMark: Steal the Gem
@@ -2510,6 +2524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 --- !u!114 &969987803412154185 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1054601113, guid: 957f213c55b3b4a4ab30a011361b7069, type: 3}
@@ -2906,6 +2921,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89130bf0aec2fc04585b91bef58605ab, type: 3}
+=======
+  dialogText: {fileID: 438029657}
+  nameText: {fileID: 1792262310}
+  dialogBox: {fileID: 1843445903}
+  nameBox: {fileID: 1872100125}
+  dialogSentences:
+  - gerger
+  - fgdfg
+  - gdfgfdg
+  - gfdgdfg
+  - gdfgdfgdf
+  currentSentence: 3
+>>>>>>> Stashed changes
 --- !u!1001 &6674275945875916374
 PrefabInstance:
   m_ObjectHideFlags: 0
